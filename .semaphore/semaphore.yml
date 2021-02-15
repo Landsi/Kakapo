@@ -13,9 +13,6 @@ blocks:
       prologue:
         commands:
           - checkout
-          - cache restore
-          - bundle install
-          - cache store
       jobs:
         - name: bundle exec fastlane test
           commands:
